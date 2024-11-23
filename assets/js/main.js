@@ -179,7 +179,7 @@ contactForm && contactForm.addEventListener("submit", function (event) {
         message: document.querySelector("#message").value,
     };
 
-    emailjs.send("service_7yzkulw", "template_wqq5x6g", templateParams)
+    emailjs.send("service_x28wevt", "template_wqq5x6g", templateParams)
         .then(function(response) {
             console.log("SUCCESS!", response.status, response.text);
             
