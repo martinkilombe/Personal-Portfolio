@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initialize EmailJS with your public key
 const btn = document.getElementById("contact-submit-btn");
-btn && emailjs.init("3OzZPPrLJxs8BX0lV"); // Your public key
+btn && emailjs.init("ODJOTMNmmKvoUxoes"); // Your public key
 
 const contactForm = document.getElementById("contact-form");
 contactForm && contactForm.addEventListener("submit", function (event) {
@@ -179,7 +179,7 @@ contactForm && contactForm.addEventListener("submit", function (event) {
         message: document.querySelector("#message").value,
     };
 
-    emailjs.send("service_x28wevt", "template_wqq5x6g", templateParams)
+    emailjs.send("service_56izs4f", "template_wqq5x6g", templateParams)
         .then(function(response) {
             console.log("SUCCESS!", response.status, response.text);
             
